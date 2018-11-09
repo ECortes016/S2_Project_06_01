@@ -14,12 +14,14 @@
 */
 
 /* HTML Styles */
+/* The background image is set to 100% width of the page. It is also set to a fixed layout which allows it to stay still, not having to worry about it moving while scrolling down the page. */
 html {
     background: url(sd_back1.png) 100% fixed;
 }
 
 
 /* Body Styles */
+/* The body is given a background image and within that there are some radial gradients set to look like stars, some are set to a shape of a standard circle and others are set to an ellipse shape with all of them being white. The background color of the body is set to a gray with a box shadow on the left and right sides. */
 body {
     background: url(sd_back2.png),
         radial-gradient(circle closest-corner at 40% 70%, white 15%, rgba(151, 151, 151, .5) 50%),
@@ -31,11 +33,13 @@ body {
 }
 
 /* Navigation List Styles */
+/* An blueish outset outline is set to show some depth to the navigation bar  */
 body>header a {
     border: outset 5px rgb(211, 211, 255)
 }
 
 /* Section Left Styles */
+/* The left article heading is set to have white text with some text shadow running along it to make it stand out. The image is given three different filters and it is also flipped along the Y-Axis so it's facing right. Lastly the footer is given a border along the top with the same blueish color that the navigation bar was given. */
 body #left article>h1 {
     color: rgb(211, 211, 211);
     text-shadow: black 0px 0px 5px;
@@ -43,6 +47,7 @@ body #left article>h1 {
 
 #mportrait {
     -webkit-filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, .7)) grayscale(.7) opacity(.6);
+    filter: drop-shadow(-15px 0px 5px rgba(51, 51, 51, .7)) grayscale(.7) opacity(.6);
     transform: rotateY(180deg);
 }
 
